@@ -1,7 +1,7 @@
 # Modelling a Lifelong Learner: Hidilyn Diaz
 
 A scroll-driven editorial presentation website for **BEEd 1-A, College of Education, Angeles University Foundation**.
-Group: Marychu Bernardo · Daniel Canlapan · King Marrys Nuguid · Aljhon Yumul. Instructor: Kimberly Illeah Marie Francisco.
+Group: Marychu Bernardo · Daniel Martin Canlapan · King Marrys Nuguid · Aljhon Yumul. Instructor: Kimberly Illeah Marie Francisco.
 
 Built with **Vite + React + TypeScript** and **Remotion**. Each scene is a Remotion composition rendered in a `<Player>`, and scrolling scrubs its timeline. Lenis provides smooth scrolling.
 
@@ -36,7 +36,7 @@ Interactive bits: click any **year** on the timeline to jump to it. On each qual
 
 All words on the site live in this file: intro, biography, timeline, challenge, qualities, numbers, reflection, personal insights, conclusion, and references. Components never contain copy.
 
-- **Personal insights:** replace `PLACEHOLDER` with each member's text in `insights.items`. The order is alphabetical by surname. While a placeholder remains, it shows as a dashed "Placeholder" box.
+- **Personal insights:** each member's text lives in `insights.items`, in alphabetical order by surname.
 - In-text citations such as `(Basco, 2016)` are detected and styled automatically. Keep them inside the sentence they support.
 
 ## Photos: `src/photos.ts` + `public/assets/photos/`

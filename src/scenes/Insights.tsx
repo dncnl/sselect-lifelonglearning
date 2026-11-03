@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCurrentFrame } from 'remotion';
-import { insights, PLACEHOLDER } from '../content';
+import { insights } from '../content';
 import { prog, windowed, wipeUp } from '../lib/anim';
 import { Corners, Scene, SceneProps, useLayout } from './common';
 
@@ -26,7 +26,6 @@ export const Insights: React.FC<SceneProps> = () => {
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, flex: 1, position: 'relative' }}>
           {insights.items.map((m, i) => {
             const s = FIRST + i * GAP;
-            const placeholder = m.text === PLACEHOLDER;
             const on = i === n - 1 ? prog(frame, s, 20) : windowed(frame, s, s + GAP + 4, 14);
             if (on <= 0.001) return null;
             const [first, ...rest] = m.name.split(' ');
@@ -35,7 +34,7 @@ export const Insights: React.FC<SceneProps> = () => {
             return (
               <li
                 key={m.name}
-                className={`insight ${placeholder ? 'insight--placeholder' : ''}`}
+                className="insight"
                 style={{
                   position: 'absolute',
                   inset: 0,
@@ -49,13 +48,12 @@ export const Insights: React.FC<SceneProps> = () => {
               >
                 <div className="label" style={{ marginBottom: 14 }}>
                   <span className="accent-text">0{i + 1}</span> · Personal insight
-                  {placeholder && <span className="ph-tag">Placeholder · edit in content.ts</span>}
                 </div>
                 <h3 className="display" style={{ margin: '0 0 3vh', fontSize: narrow ? 36 : Math.min(fw(4.6, 44, 96), h * 0.11), lineHeight: 1 }}>
                   <span className="italic">{[first, ...rest].join(' ')}</span> <span className="caps">{surname}</span>
                 </h3>
                 <p
-                  className={placeholder ? 'serif italic' : 'serif'}
+                  className="serif"
                   style={{
                     margin: 0,
                     lineHeight: 1.35,

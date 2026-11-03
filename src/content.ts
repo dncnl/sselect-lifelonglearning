@@ -9,7 +9,7 @@ export const meta = {
   firstName: 'Hidilyn',
   lastName: 'Diaz',
   subtitle: 'From lifting wood under a sampaloc tree to teaching in a university classroom',
-  members: ['Marychu Bernardo', 'Daniel Canlapan', 'King Marrys Nuguid', 'Aljhon Yumul'],
+  members: ['Marychu Bernardo', 'Daniel Martin Canlapan', 'King Marrys Nuguid', 'Aljhon Yumul'],
   course: 'BEEd 1-A, College of Education, Angeles University Foundation',
   courseShort: 'BEEd 1-A · AUF',
   instructor: 'Kimberly Illeah Marie Francisco',
@@ -250,19 +250,26 @@ export const reflection = {
   ],
 };
 
-export const PLACEHOLDER = '[Write your personal insight here.]';
-
-/** Alphabetical by surname. Replace PLACEHOLDER with each member's insight. */
+/** Alphabetical by surname. */
 export const insights = {
   heading: 'Personal Insights',
   items: [
-    { name: 'Marychu Bernardo', text: PLACEHOLDER },
     {
-      name: 'Daniel Canlapan',
+      name: 'Marychu Bernardo',
+      text: 'After senior high school, I was unsure about which university to attend or whether I should take a gap year. I applied for scholarships at AUF, but while waiting for the results, I also enrolled at NU Clark. It was a confusing time because I didn’t know what would happen next or if I was making the right choice. Like Hidilyn Diaz, I learned that life does not always go as planned. Despite facing many challenges, she continued working toward her goals and never stopped learning. Her story inspires me to stay strong, accept changes, and make the most of the opportunities I have. I may still be figuring things out, but I know that learning and growing should never stop, even after graduation.',
+    },
+    {
+      name: 'Daniel Martin Canlapan',
       text: 'As an irregular computer science student taking this subject with BEEd 1-A, I relate to Hidilyn Diaz more than I expected. She also started in computer science at Universidad de Zamboanga before leaving it, and she went back to school years later to finish a different degree at 32. Being irregular can feel like falling behind, but her story shows that a different path is not the end of learning. I try to remain optimistic and keep learning at my own pace, as finishing my degree and continuing to grow after it is a goal I’m trying to achieve.',
     },
-    { name: 'King Marrys Nuguid', text: PLACEHOLDER },
-    { name: 'Aljhon Yumul', text: PLACEHOLDER },
+    {
+      name: 'King Marrys Nuguid',
+      text: 'Learning about Hidilyn Diaz’s life and journey made me realize that success does not happen overnight. Her experiences taught me that every failure, rejection, and challenge can become a stepping stone toward achieving our dreams. Despite facing financial difficulties, disappointments, and many struggles throughout her career, she continued to work hard and believe in herself until she finally achieved her dream of becoming the first Filipino Olympic gold medalist. Her story reminds me that we should never allow our circumstances or failures to determine what we can achieve in life. As a student, I also experience challenges and moments when I feel discouraged or doubt my abilities. However, Hidilyn’s journey inspires me to remain patient, continue learning, and trust the process even when progress seems slow. I also realized that being a lifelong learner means being willing to improve ourselves, accept failures, and learn from every experience.',
+    },
+    {
+      name: 'Aljhon Yumul',
+      text: 'Before I got my scholarship from AUF, I applied to many schools and was turned down again and again. At times I wondered if I was simply not good enough. Reading about Hidilyn Diaz changed how I see those rejections. She placed second to last in 2008 and failed all her lifts in 2012, yet each failure taught her something that helped her win silver and then gold. In the same way, every “no” I received made me better at preparing, at not giving up, and at appreciating the “yes” when it finally came. Hidilyn also took a scholarship to go back to school, and I know how much a scholarship can open a door that seemed closed. Now, as a future teacher, I want to remember how it felt to be passed over, so I can notice and encourage students who are still waiting for their chance. Hidilyn learned in order to teach others, and I want to do the same.',
+    },
   ],
 };
 
